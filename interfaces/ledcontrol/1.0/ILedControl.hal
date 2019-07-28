@@ -1,0 +1,44 @@
+/*
+*  Copyright (C) 2019 Androsov Alexander <eelleekk@gmail.com>
+*
+*  This program is free software; you can redistribute it and/or modify
+*  it under the terms of the GNU General Public License version 2 as
+*  published by the Free Software Foundation.
+*/
+
+package vendor.globallogic.ledcontrol@1.0;
+
+/**
+ * ILedControl interface provides a control for on-board LEDs
+ */
+interface ILedControl {
+
+    /**
+     * LedControl initialization.
+     *
+     * @return result 0 if successful, nonzero otherwise.
+     */
+     initializeLedControl() generates (int32_t result);
+
+    /**
+     * Set Led status value.
+     *
+     * @return result 0 if successful, nonzero otherwise.
+     */
+     setLedStatus(int32_t led, int32_t state) generates (int32_t result);
+
+	/**
+     * Get Led status value.
+     *
+     * @return result 0 if Led is off, nonzero if led id on.
+     */
+     getLedStatus(int32_t led) generates (int32_t result);
+
+    /**
+     * Terminate LedControl
+     *
+     * @return result 0 if successful, nonzero otherwise.
+     */
+     terminateLedControl() generates (int32_t result);
+
+};

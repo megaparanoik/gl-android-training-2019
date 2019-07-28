@@ -1,0 +1,4 @@
+
+vendor.globallogic.ledcontrol::ILedControl u:object_r:hal_ledcontrol_hwservice:s0
+
+#+
