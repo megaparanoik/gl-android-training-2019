@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Led Control App</string>
+    <string name="led1_caption">Led 1</string>
+    <string name="led2_caption">Led 2</string>
+    <string name="led3_caption">Led 3</string>
+    <string name="led4_caption">Led 4</string>
+    <string name="switch_off_caption">OFF</string>
+    <string name="switch_on_caption">ON</string>
+</resources>
