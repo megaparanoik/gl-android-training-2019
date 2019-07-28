@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/led1_caption"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/led2_caption"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLed1" />
+
+    <TextView
+        android:id="@+id/txtLed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/led3_caption"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLed2" />
+
+    <TextView
+        android:id="@+id/txtLed4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/led4_caption"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLed3" />
+
+    <Switch
+        android:id="@+id/swch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/switch_off_caption"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLed1"
+        app:layout_constraintStart_toEndOf="@+id/txtLed1"
+        app:layout_constraintTop_toTopOf="@+id/txtLed1" />
+
+    <Switch
+        android:id="@+id/swch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/switch_off_caption"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLed2"
+        app:layout_constraintStart_toEndOf="@+id/txtLed2"
+        app:layout_constraintTop_toTopOf="@+id/txtLed2" />
+
+    <Switch
+        android:id="@+id/swch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/switch_off_caption"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLed3"
+        app:layout_constraintStart_toEndOf="@+id/txtLed3"
+        app:layout_constraintTop_toTopOf="@+id/txtLed3" />
+
+    <Switch
+        android:id="@+id/swch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/switch_off_caption"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLed4"
+        app:layout_constraintStart_toEndOf="@+id/txtLed4"
+        app:layout_constraintTop_toTopOf="@+id/txtLed4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
