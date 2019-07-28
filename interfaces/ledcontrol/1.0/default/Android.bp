@@ -1,0 +1,17 @@
+cc_binary {
+    name: "vendor.globallogic.ledcontrol@1.0-service.hikey960",
+    init_rc: ["vendor.globallogic.ledcontrol@1.0-service.hikey960.rc"],
+    relative_install_path: "hw",
+    vendor: true,
+    srcs: [
+        "LedControl.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libhidlbase",
+        "libhidltransport",
+        "libutils",
+        "liblog",
+        "vendor.globallogic.ledcontrol@1.0",
+    ],
+}
